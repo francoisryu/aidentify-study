@@ -1,3 +1,9 @@
+'''
+Created on 2018. 6. 15.
+
+@author: eric.hong@aidentify.io
+'''
+
 class operation:
     def __init__(self):
         self.result = 0

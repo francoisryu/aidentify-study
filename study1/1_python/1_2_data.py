@@ -1,3 +1,9 @@
+'''
+Created on 2018. 6. 15.
+
+@author: eric.hong@aidentify.io
+'''
+
 # 튜플
 tuple = (1, 2, '1', '2')
 print(tuple[0]) # 숫자 출력 : type(tuple[0])
