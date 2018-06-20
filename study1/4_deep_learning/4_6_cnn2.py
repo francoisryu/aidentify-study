@@ -39,7 +39,7 @@ def model(input_X):
     h_pool2_flat = tf.reshape(h_pool2, [-1, 50 * 7 * 7])
     h_fc1 = tf.nn.tanh(tf.matmul(h_pool2_flat, W_fc1) + b_fc1)
 
-    # 출력(fully connected) 레이어 2 (10개 출력)
+    # 출력(fully-connected) 레이어 2 (10개 출력)
     class_num = 10
     W_fc2 = tf.Variable(tf.truncated_normal([500, class_num], stddev=0.1))
     b_fc2 = tf.Variable(tf.zeros([class_num]))
