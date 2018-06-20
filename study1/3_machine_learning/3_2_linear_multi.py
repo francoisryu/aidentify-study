@@ -6,7 +6,6 @@ Created on 2018. 6. 15.
 
 import tensorflow as tf
 import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D # 3차원
 
 # 학습 데이터
 train_X = [3.3, 4.4, 5.5, 6.71, 6.93, 4.168, 9.779, 6.182, 7.59, 2.167, 7.042, 10.791, 5.313]
@@ -69,7 +68,6 @@ with tf.Session() as sess:
     test_X = [6.83, 4.668, 8.9, 7.91, 5.7, 8.7, 3.1, 2.1]
     test_X2 = [5.83, 3.668, 7.9, 6.91, 4.7, 7.7, 2.1, 1.1] # test_X2 추가
     test_Y = [1.84, 2.273, 3.2, 2.831, 2.92, 3.24, 1.35, 1.03]
-
     testing_cost = sess.run(cost, feed_dict={X: test_X, X2: test_X, Y: test_Y}) # X2 추가
     print("테스트 완료! (cost : " + str(testing_cost) + ")")
     

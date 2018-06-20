@@ -22,7 +22,7 @@ n_samples = len(train_X)
 X = tf.placeholder("float32")
 Y = tf.placeholder("float")
 
-# 모델의 wright와 bias의 값을 랜덤으로 초기화
+# 모델의 wright 값을 랜덤으로 초기화
 W = tf.Variable(tf.random_normal([1, 3], -1.0, 1.0), name="weight")
 
 # linear 모델을 생성
