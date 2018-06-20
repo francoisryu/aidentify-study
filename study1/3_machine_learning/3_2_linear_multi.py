@@ -1,4 +1,8 @@
-from __future__ import print_function
+'''
+Created on 2018. 6. 15.
+
+@author: eric.hong@aidentify.io
+'''
 
 import tensorflow as tf
 import matplotlib.pyplot as plt

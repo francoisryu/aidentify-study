@@ -1,3 +1,9 @@
+'''
+Created on 2018. 6. 15.
+
+@author: eric.hong@aidentify.io
+'''
+
 from keras.models import Sequential
 from keras.layers.core import Dense, Activation
 

@@ -1,3 +1,9 @@
+'''
+Created on 2018. 6. 15.
+
+@author: eric.hong@aidentify.io
+'''
+
 import numpy as np
 import tensorflow as tf
 from matplotlib import pyplot as plt
