@@ -23,7 +23,7 @@ X = tf.placeholder("float")
 Y = tf.placeholder("float")
 
 # 모델의 wright 값을 랜덤으로 초기화
-W = tf.Variable(tf.random_normal([1, 3], -1.0, 1.0), name="weight")
+W = tf.Variable(tf.zeros([1, 3], dtype=tf.float32), name="weight")
 
 # linear 모델을 생성
 # y = ax + b 형태이나 행렬임(matrix multiply 사용)
