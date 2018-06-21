@@ -19,7 +19,7 @@ train_Y = [1.7, 2.76, 2.09, 3.19, 1.694, 1.573, 3.366, 2.596, 2.53, 1.221, 2.827
 #n_samples = len(train_X)
 
 # X와 Y의 입력값
-X = tf.placeholder("float32")
+X = tf.placeholder("float")
 Y = tf.placeholder("float")
 
 # 모델의 wright 값을 랜덤으로 초기화
