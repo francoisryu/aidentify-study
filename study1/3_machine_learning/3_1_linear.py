@@ -45,7 +45,7 @@ with tf.Session() as sess:
     # 초기화 실행
     sess.run(tf.global_variables_initializer())
 
-    _cost = _W = _b = 0
+    #_cost = _W = _b = 0
     # 학습횟수(epoch:3000) 
     for epoch in range(3000):
         sess.run(optimizer, feed_dict={X: train_X, Y:train_Y})
@@ -57,9 +57,9 @@ with tf.Session() as sess:
         print(epoch, training_cost, [training_W, training_b])
 
         # cost가 더이상 변화가 없으면 종료
-        if _cost == training_cost and _W == training_W and _b == training_b:
-            break;
-        _cost, _W, _b = (training_cost, training_W, training_b)
+        #if _cost == training_cost and _W == training_W and _b == training_b:
+        #    break;
+        #_cost, _W, _b = (training_cost, training_W, training_b)
 
     print("학습완료! (cost : " + str(training_cost) + ")")
 
