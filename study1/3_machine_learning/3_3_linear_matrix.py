@@ -1,4 +1,8 @@
-from __future__ import print_function
+'''
+Created on 2018. 6. 15.
+
+@author: eric.hong@aidentify.io
+'''
 
 import numpy as np
 import tensorflow as tf
@@ -12,14 +16,14 @@ train_X = [
         [1.,1.,1.,1.,1.,1.,1.,1.,1.,1.,1.,1.,1.]
 ]
 train_Y = [1.7, 2.76, 2.09, 3.19, 1.694, 1.573, 3.366, 2.596, 2.53, 1.221, 2.827, 3.465, 1.65]
-n_samples = len(train_X)
+#n_samples = len(train_X)
 
 # X와 Y의 입력값
-X = tf.placeholder("float32")
+X = tf.placeholder("float")
 Y = tf.placeholder("float")
 
-# 모델의 wright와 bias의 값을 랜덤으로 초기화
-W = tf.Variable(tf.random_normal([1, 3], -1.0, 1.0), name="weight")
+# 모델의 wright 값을 랜덤으로 초기화
+W = tf.Variable(tf.zeros([1, 3], dtype=tf.float32), name="weight")
 
 # linear 모델을 생성
 # y = ax + b 형태이나 행렬임(matrix multiply 사용)

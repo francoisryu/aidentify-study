@@ -1,3 +1,9 @@
+'''
+Created on 2018. 6. 15.
+
+@author: eric.hong@aidentify.io
+'''
+
 import tensorflow as tf
 
 x = tf.Variable(0) # 담을 데이터 변수

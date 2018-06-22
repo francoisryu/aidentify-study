@@ -1,3 +1,9 @@
+'''
+Created on 2018. 6. 15.
+
+@author: eric.hong@aidentify.io
+'''
+
 import tensorflow as tf
 
 w = tf.Variable(tf.random_normal([3, 2]), name="W")

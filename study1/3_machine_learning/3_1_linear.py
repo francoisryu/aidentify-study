@@ -1,4 +1,8 @@
-from __future__ import print_function
+'''
+Created on 2018. 6. 15.
+
+@author: eric.hong@aidentify.io
+'''
 
 import tensorflow as tf
 import matplotlib.pyplot as plt
@@ -6,7 +10,7 @@ import matplotlib.pyplot as plt
 # 학습 데이터
 train_X = [3.3, 4.4, 5.5, 6.71, 6.93, 4.168, 9.779, 6.182, 7.59, 2.167, 7.042, 10.791, 5.313]
 train_Y = [1.7, 2.76, 2.09, 3.19, 1.694, 1.573, 3.366, 2.596, 2.53, 1.221, 2.827, 3.465, 1.65]
-n_samples = len(train_X)
+#n_samples = len(train_X)
 
 # X와 Y의 입력값
 X = tf.placeholder("float")
@@ -41,7 +45,7 @@ with tf.Session() as sess:
     # 초기화 실행
     sess.run(tf.global_variables_initializer())
 
-    _cost = _W = _b = 0
+    #_cost = _W = _b = 0
     # 학습횟수(epoch:3000) 
     for epoch in range(3000):
         sess.run(optimizer, feed_dict={X: train_X, Y:train_Y})
@@ -53,9 +57,9 @@ with tf.Session() as sess:
         print(epoch, training_cost, [training_W, training_b])
 
         # cost가 더이상 변화가 없으면 종료
-        if _cost == training_cost and _W == training_W and _b == training_b:
-            break;
-        _cost, _W, _b = (training_cost, training_W, training_b)
+        #if _cost == training_cost and _W == training_W and _b == training_b:
+        #    break;
+        #_cost, _W, _b = (training_cost, training_W, training_b)
 
     print("학습완료! (cost : " + str(training_cost) + ")")
 

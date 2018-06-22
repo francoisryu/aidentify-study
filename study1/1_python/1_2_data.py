@@ -12,8 +12,8 @@ print(tuple[3]) # 문자 출력 : type(tuple[0])
 print(tuple + (3, '3'))
 print(tuple[:2])
 
-del(tuple[3]) # 에러 : 튜플은 수정불가
-tuple.append(3) # 에러 : 튜플은 수정불가
+#del(tuple[3]) # 에러 : 튜플은 수정불가
+#tuple.append(3) # 에러 : 튜플은 수정불가
 
 tuple1 = tuple[0:2]
 print(tuple1)
@@ -23,7 +23,7 @@ print(tuple1)
 list = [1, 2, '1', '2']
 print(list)
 
-print(list + (3, '3')) # 에러 같은 형끼리만 연산이 된다
+#print(list + (3, '3')) # 에러 같은 형끼리만 연산이 된다
 print(list + [3, '3']) 
 
 del(list[3])
