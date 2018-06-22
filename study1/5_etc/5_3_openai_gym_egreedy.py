@@ -31,7 +31,7 @@ for i in range(num_episodes):
             action = env.action_space.sample()
         else:
             action = np.argmax(Q[state, :])
-        
+
         # new_state, reward 업데이트 
         new_state, reward, done, _ = env.step(action)
         
@@ -43,10 +43,8 @@ for i in range(num_episodes):
 
     rList.append(rAll)
 
-
 print('성공율: ', str(sum(rList)/num_episodes))
 print('Q-table')
 print(Q)
 plt.bar(range(len(rList)), rList, color = 'blue')
 plt.show()
-
